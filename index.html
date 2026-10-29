@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--iv:#F7F6F2;--wh:#fff;--pb:#EAF2FF;--gr:#E9ECF1;--nv:#101B32;--md:#626B7A;--bl:#347FE0;--bd:#1F5FBF;--e:cubic-bezier(.2,.8,.2,1);--df:'Bricolage Grotesque','Arial Narrow',Arial,sans-serif;--px:clamp(1.2rem,5vw,5rem)}
+:root{--iv:#F7F6F2;--wh:#fff;--pb:#EAF2FF;--gr:#E9ECF1;--nv:#101B32;--md:#626B7A;--bl:#2F7BE0;--bd:#1F5FBF;--e:cubic-bezier(.2,.8,.2,1);--df:'Bricolage Grotesque','Arial Narrow',Arial,sans-serif;--px:clamp(1.2rem,5vw,5rem)}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:5rem}
 body{font:400 1.05rem/1.65 'Hanken Grotesk',system-ui,sans-serif;color:var(--nv);background:var(--iv);overflow-x:hidden}
@@ -22,8 +22,8 @@ a{color:inherit}button{font:inherit;color:inherit;background:none;border:0;curso
 .skip{position:absolute;left:1rem;top:-4rem;background:var(--nv);color:#fff;padding:.6rem 1rem;z-index:100}.skip:focus{top:1rem}
 #nav{position:fixed;inset:0 0 auto;z-index:50;display:flex;align-items:center;gap:1.6rem;padding:calc(1.1rem + env(safe-area-inset-top,0px)) var(--px) 1.1rem;transition:background .4s,padding .4s,box-shadow .4s}
 #nav.sc{background:#f7f6f2d9;backdrop-filter:blur(14px);padding-top:calc(.6rem + env(safe-area-inset-top,0px));padding-bottom:.6rem;box-shadow:0 1px 0 #101b3218}
-.logo{background:var(--nv);border-radius:12px;padding:.45rem .85rem;display:flex;align-items:center;text-decoration:none;margin-right:auto}
-.logo img{height:34px;width:auto;display:block}
+.logo{background:#05070B;border-radius:14px;padding:.25rem .55rem;display:flex;align-items:center;text-decoration:none;margin-right:auto}
+.logo img{height:56px;width:auto;display:block;transition:height .4s}#nav.sc .logo img{height:42px}
 .fb{color:#fff;font:800 1.05rem var(--df);letter-spacing:-.02em}.fb em{display:block;font:600 .55rem 'Hanken Grotesk';letter-spacing:.5em;color:var(--bl);font-style:normal}
 #nav nav{display:flex;gap:1.7rem}
 #nav nav a{text-decoration:none;font-weight:500;font-size:.95rem;position:relative;padding:.3rem 0}
@@ -124,7 +124,7 @@ dialog::backdrop{background:#101b3299;backdrop-filter:blur(4px)}dialog[open]{ani
 .fm{background:var(--wh);color:var(--nv);border-radius:1.6rem;padding:clamp(1.4rem,3vw,2.4rem);display:grid;gap:1rem}.fm h3{font:700 1.4rem var(--df)}
 .fm label{font-weight:600;font-size:.9rem;display:grid;gap:.3rem}
 .fm input,.fm textarea{font:inherit;padding:.8rem 1rem;border:1.5px solid #101b3233;border-radius:12px;background:var(--iv);width:100%}
-.fm input:focus,.fm textarea:focus{border-color:var(--bl);outline:3px solid #347fe040;outline-offset:0}.fm [aria-invalid=true]{border-color:#b3261e}
+.fm input:focus,.fm textarea:focus{border-color:var(--bl);outline:3px solid #2f7be040;outline-offset:0}.fm [aria-invalid=true]{border-color:#b3261e}
 .er{color:#b3261e;font-weight:500}
 fieldset{border:0;display:flex;flex-wrap:wrap;gap:.5rem}legend{font-weight:600;font-size:.9rem;margin-bottom:.4rem}
 .fm label.ck{position:relative;display:block;font-weight:500}.ck input{position:absolute;opacity:0;width:1px}
@@ -150,7 +150,7 @@ fieldset{border:0;display:flex;flex-wrap:wrap;gap:.5rem}legend{font-weight:600;f
 <div id="cur" aria-hidden="true"><i></i></div>
 <a class="skip" href="#about" data-t="skip"></a>
 <header id="nav">
-<a class="logo" href="#top" aria-label="Impuls Studios"><!-- Place the official logo at assets/logo.png --><img src="assets/logo.png" alt="Impuls Studios" width="150" height="34" onerror="this.outerHTML='<b class=fb>IMPULS<em>STUDIOS</em></b>'"></a>
+<a class="logo" href="#top" aria-label="Impuls Studios"><!-- Place the official logo at assets/logo.png --><img src="assets/logo.png" alt="Impuls Studios" width="76" height="56" onerror="this.outerHTML='<b class=fb>IMPULS<em>STUDIOS</em></b>'"></a>
 <nav data-al="nav"><a href="#top" data-t="n1"></a><a href="#about" data-t="n2"></a><a href="#services" data-t="n3"></a><a href="#work" data-t="n4"></a><a href="#contact" data-t="n5"></a></nav>
 <div class="lg"><button data-l="sq" aria-pressed="true">SQ</button><button data-l="en" aria-pressed="false">EN</button></div>
 <a class="btn sm" data-wa href="https://wa.me/38343814168"><span data-t="cta"></span><i></i></a>
@@ -169,14 +169,14 @@ fieldset{border:0;display:flex;flex-wrap:wrap;gap:.5rem}legend{font-weight:600;f
 <div class="acts"><a class="btn" data-wa href="https://wa.me/38343814168"><span data-t="cta">Flisni me ne</span><i></i></a><a class="lnk" href="#work" data-t="see"></a></div>
 </div>
 <div class="hv" aria-hidden="true">
-<svg viewBox="0 0 400 400" fill="none" stroke="#347FE0" stroke-width="1.3">
+<svg viewBox="0 0 400 400" fill="none" stroke="#2F7BE0" stroke-width="1.3">
 <path d="M10 200H390M200 10V390" stroke="#101B32" stroke-opacity=".1"/>
 <circle class="dr1" pathLength="1" cx="200" cy="200" r="190" style="animation-delay:.3s"/>
 <circle class="dr1" pathLength="1" cx="200" cy="200" r="140" stroke-opacity=".6" style="animation-delay:.6s"/>
 <circle class="dr1" pathLength="1" cx="200" cy="200" r="92" stroke-opacity=".4" style="animation-delay:.9s"/>
-<g class="spin"><circle cx="390" cy="200" r="8" fill="#347FE0" stroke="none"/></g>
+<g class="spin"><circle cx="390" cy="200" r="8" fill="#2F7BE0" stroke="none"/></g>
 <g class="spin r"><circle cx="200" cy="60" r="5" fill="#101B32" stroke="none"/></g>
-<path class="pl" fill="#347FE0" stroke="none" d="M162 148Q162 128 180 139L262 187Q278 200 262 213L180 261Q162 272 162 252Z"/>
+<path class="pl" fill="#2F7BE0" stroke="none" d="M162 148Q162 128 180 139L262 187Q278 200 262 213L180 261Q162 272 162 252Z"/>
 </svg>
 <span class="fl" style="left:0;top:16%;--k:24">Social</span><span class="fl" style="right:-2%;top:34%;--k:34;animation-delay:-2s">Video</span><span class="fl" style="left:10%;bottom:10%;--k:18;animation-delay:-4s">Web</span><span class="fl" style="right:12%;bottom:2%;--k:28;animation-delay:-1s">Foto</span>
 </div>
@@ -184,7 +184,7 @@ fieldset{border:0;display:flex;flex-wrap:wrap;gap:.5rem}legend{font-weight:600;f
 </section>
 <div class="tick" aria-hidden="true"><div class="tk" id="tk"></div></div>
 
-<section class="sec about" id="about"><svg class="sym" id="sym" viewBox="0 0 400 400" fill="none" stroke="#347FE0" stroke-width="1.2" aria-hidden="true"><circle cx="200" cy="200" r="190" stroke-opacity=".3"/><path d="M120 70Q120 45 142 58L330 175Q352 200 330 225L142 342Q120 355 120 330Z"/><path d="M150 110Q150 95 163 103L290 180Q303 200 290 220L163 297Q150 305 150 290Z" stroke-dasharray="4 6"/></svg>
+<section class="sec about" id="about"><svg class="sym" id="sym" viewBox="0 0 400 400" fill="none" stroke="#2F7BE0" stroke-width="1.2" aria-hidden="true"><circle cx="200" cy="200" r="190" stroke-opacity=".3"/><path d="M120 70Q120 45 142 58L330 175Q352 200 330 225L142 342Q120 355 120 330Z"/><path d="M150 110Q150 95 163 103L290 180Q303 200 290 220L163 297Q150 305 150 290Z" stroke-dasharray="4 6"/></svg>
 <div class="wrap"><h2 class="mask" data-t="at"></h2>
 <div class="ab"><div><div class="dr"></div><p class="rv" data-t="ap"></p></div></div></div></section>
 
