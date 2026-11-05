@@ -8,7 +8,7 @@
 <meta property="og:title" content="Impuls Studios">
 <meta property="og:description" content="Strategji kreative, përmbajtje dhe zgjidhje digjitale që i ndihmojnë bizneset të dallohen dhe të rriten.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23101B32'/%3E%3Cpath d='M24 18q0-5 5-2l17 12q4 4 0 8L29 48q-5 3-5-2z' fill='%23347FE0'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2305070B'/%3E%3Crect x='13' y='11' width='14' height='42' rx='5' fill='%232D496F'/%3E%3Cpath d='M34 17q0-5 5-2l19 14q4 3 0 6L39 49q-5 3-5-2z' fill='%23347FE0'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -22,8 +22,8 @@ a{color:inherit}button{font:inherit;color:inherit;background:none;border:0;curso
 .skip{position:absolute;left:1rem;top:-4rem;background:var(--nv);color:#fff;padding:.6rem 1rem;z-index:100}.skip:focus{top:1rem}
 #nav{position:fixed;inset:0 0 auto;z-index:50;display:flex;align-items:center;gap:1.6rem;padding:calc(1.1rem + env(safe-area-inset-top,0px)) var(--px) 1.1rem;transition:background .4s,padding .4s,box-shadow .4s}
 #nav.sc{background:#f7f6f2d9;backdrop-filter:blur(14px);padding-top:calc(.6rem + env(safe-area-inset-top,0px));padding-bottom:.6rem;box-shadow:0 1px 0 #101b3218}
-.logo{background:#05070B;border-radius:14px;padding:.25rem .55rem;display:flex;align-items:center;text-decoration:none;margin-right:auto}
-.logo img{height:56px;width:auto;display:block;transition:height .4s}#nav.sc .logo img{height:42px}
+.logo{background:#05070B;border-radius:14px;padding:.18rem .35rem;display:flex;align-items:center;text-decoration:none;margin-right:auto;flex:0 0 auto}
+.logo img{height:68px;width:auto;display:block;transition:height .4s}#nav.sc .logo img{height:50px}
 .fb{color:#fff;font:800 1.05rem var(--df);letter-spacing:-.02em}.fb em{display:block;font:600 .55rem 'Hanken Grotesk';letter-spacing:.5em;color:var(--bl);font-style:normal}
 #nav nav{display:flex;gap:1.7rem}
 #nav nav a{text-decoration:none;font-weight:500;font-size:.95rem;position:relative;padding:.3rem 0}
@@ -103,9 +103,10 @@ h2{font:800 clamp(2.6rem,7.4vw,6.6rem)/.95 var(--df);letter-spacing:-.04em}
 .pj:hover .im,.pj:focus-visible .im{border-radius:2.2rem 4px 2.2rem 4px}
 .im img,.ph{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s var(--e)}.pj:hover img{transform:scale(1.07)}
 .ph{background:linear-gradient(135deg,var(--pb),#c6dcfa);min-height:200px}
-.pj b{display:block;margin-top:.8rem;font:700 .9rem var(--df);color:var(--bd)}
+.pj b{display:block;margin-top:.8rem;font:700 .78rem var(--df);letter-spacing:.045em;color:var(--bd);text-transform:uppercase}
 .pj h3{font:700 clamp(1.3rem,2.2vw,1.9rem)/1.1 var(--df);letter-spacing:-.02em}
 .pj small{display:block;color:var(--md);font-size:.95rem;transition:transform .5s var(--e)}.pj:hover small{transform:translateX(.5rem)}
+.pj .pjhint{display:block;margin-top:.6rem;font-size:.78rem;font-weight:700;color:var(--bd);letter-spacing:.04em;text-transform:uppercase}
 .dm{position:absolute;left:.6rem;top:.6rem;background:var(--nv);color:#fff;font:700 .7rem sans-serif;padding:.2rem .5rem;font-style:normal;z-index:1}
 .empty{grid-column:1/-1;border:1.5px dashed #101b3240;border-radius:2rem;padding:clamp(2rem,6vw,5rem);display:grid;gap:1.5rem;justify-items:start}.empty p{font:600 clamp(1.3rem,3vw,2rem)/1.2 var(--df);max-width:30ch}
 dialog{border:0;border-radius:1.5rem;width:min(1100px,94vw);max-height:92vh;background:var(--iv);color:var(--nv);margin:auto;overflow:auto}
@@ -114,7 +115,7 @@ dialog::backdrop{background:#101b3299;backdrop-filter:blur(4px)}dialog[open]{ani
 .mm img,.mm video,.mm .ph{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
 .ths{display:flex;gap:.5rem;padding:.6rem;flex-wrap:wrap}.th{width:64px;height:64px;padding:0;border-radius:8px;overflow:hidden}.th img{width:100%;height:100%;object-fit:cover;display:block}
 .mt{padding:2.4rem 2rem}.mt h3{font:800 clamp(1.8rem,3.5vw,3rem)/1 var(--df);letter-spacing:-.03em;margin:.4rem 0 1rem}.mt small{color:var(--bd);font-weight:700}
-.ctl{display:flex;gap:.6rem;margin-top:2rem}
+.ctl{display:flex;gap:.6rem;margin-top:2rem;flex-wrap:wrap}.ctl a{text-decoration:none}.mt .domain{display:inline-block;margin-top:.35rem;color:var(--md);font-weight:600;font-size:.82rem}
 .x{position:absolute;right:.8rem;top:.8rem;width:44px;height:44px;border-radius:50%;background:#fff;z-index:2;font-size:1.6rem;text-align:center;line-height:44px;box-shadow:0 4px 14px #101b3230}
 .ct{background:var(--nv);color:#fff;overflow:hidden;z-index:4}
 .ct h2{font-size:clamp(2.8rem,9vw,8.4rem);max-width:12ch;position:relative;z-index:1}
@@ -226,7 +227,10 @@ fieldset{border:0;display:flex;flex-wrap:wrap;gap:.5rem}legend{font-weight:600;f
 const CFG={wa:'38343814168',form:'' /* paste your Formspree endpoint, e.g. https://formspree.io/f/xxxxxxx */};
 /* Portfolio: add real work only. Entries without title and media stay hidden.
    {t:{sq:'',en:''},c:{sq:'',en:''},d:{sq:'',en:''},img:['assets/work/a.jpg','assets/work/b.jpg'],video:'assets/work/a.mp4',client:''} */
-const P=[];
+const P=[
+ {t:{sq:'LANDI KUBËZA',en:'LANDI KUBËZA'},c:{sq:'Dizajn dhe zhvillim i uebfaqes',en:'Website design & development'},d:{sq:'Uebfaqe prezantuese për LANDI KUBËZA, biznes që merret me kopshtari dhe gjelbërim, shtrim me kubëza, punime me tulla, oborre dhe shtigje. Faqja organizon shërbimet, punimet reale dhe informacionin e kontaktit në një prezantim të qartë dhe të përshtatshëm për pajisje mobile.',en:'A business website for LANDI KUBËZA, focused on gardening and greenery, paving, brickwork, yards and pathways. The site brings together the company’s services, real work gallery and contact information in a clear, mobile-friendly presentation.'},img:['https://landi-k.com/assets/project-01.jpg','https://landi-k.com/assets/project-05.jpg','https://landi-k.com/assets/project-02.jpg','https://landi-k.com/assets/project-03.jpg','https://landi-k.com/assets/project-04.jpg'],url:'https://landi-k.com/',domain:'landi-k.com'},
+ {t:{sq:'TONI O.P.',en:'TONI O.P.'},c:{sq:'Dizajn dhe zhvillim i uebfaqes',en:'Website design & development'},d:{sq:'Uebfaqe prezantuese për TONI O.P., kompani e fokusuar në ndërtim, restaurim dhe renovim. Faqja ndërthur identitetin vizual të kompanisë me fotografi të punimeve, prezantimin e shërbimeve dhe informacionin e kontaktit, për ta bërë ofertën më të qartë për vizitorët.',en:'A business website for TONI O.P., a company focused on construction, restoration and renovation. The site combines the company’s visual identity with project imagery, service information and contact details to make its offer clearer to visitors.'},img:['https://toni-ks.com/assets/images/hero/brick-restoration.jpg','https://toni-ks.com/assets/images/project-7/02.png'],url:'https://toni-ks.com/',domain:'toni-ks.com'}
+];
 /* Service list: [title SQ, title EN, description SQ, description EN] */
 const SV=[
 ['Menaxhim i Rrjeteve Sociale','Social Media Management','Menaxhim i prezencës suaj në rrjetet sociale, me planifikim të përmbajtjes dhe komunikim të përshtatur për markën dhe audiencën tuaj.','Manage your social media presence with planned content and communication tailored to your brand and audience.'],
@@ -240,8 +244,8 @@ sq:{title:'Impuls Studios — Agjenci kreative e marketingut në Kosovë',skip:'
 h:'Jepni *puls* biznesit tuaj.',hp:'Strategji kreative, përmbajtje dhe zgjidhje digjitale që i ndihmojnë bizneset të dallohen dhe të rriten.',see:'Shiko punët',sc:'Rrëshqit',
 at:'Kreativitet me qëllim.',ap:'Impuls Studios është një agjenci kreative e marketingut që ndihmon bizneset të prezantohen më mirë, të komunikojnë me audiencën e tyre dhe të ndërtojnë një prezencë më të fortë digjitale. Ne kombinojmë idetë kreative me zgjidhje praktike, të përshtatura sipas nevojave dhe objektivave të secilit biznes.',
 st:'Çfarë mund të bëjmë për biznesin tuaj?',sp:'Çdo biznes ka nevoja të ndryshme. Ne ofrojmë shërbime kreative dhe digjitale që ju ndihmojnë të prezantoheni më mirë, të arrini audiencën tuaj dhe të krijoni mundësi të reja.',
-wt:'Punët tona. Idetë në veprim.',wp:'Çdo projekt fillon me një ide. Këtu prezantojmë punët që tregojnë mënyrën se si i kthejmë idetë në përmbajtje dhe zgjidhje kreative.',
-we:'Portfolioja po përgatitet. Na shkruani për të biseduar për projektin tuaj.',view:'Shiko projektin',close:'Mbyll',prev:'Para',next:'Pas',
+wt:'Projektet tona. Punë reale.',wp:'Një përzgjedhje e uebfaqeve që kemi dizajnuar dhe zhvilluar për biznese në Kosovë. Secili projekt është ndërtuar rreth identitetit, shërbimeve dhe nevojave të klientit.',
+we:'Projektet e radhës po shtohen. Na shkruani për të biseduar për idenë tuaj.',view:'Shiko detajet',visit:'Vizito faqen',open:'Hap faqen',close:'Mbyll',prev:'Para',next:'Pas',
 ct:'Keni një ide? Le t’i japim puls.',cp:'Na tregoni çfarë dëshironi të arrini. Do të bisedojmë për nevojat e biznesit tuaj dhe për mënyrën se si mund t’ju ndihmojmë.',or:'Ose dërgoni një kërkesë me email',
 fn:'Emri',fb:'Emri i biznesit',fp:'Telefoni ose WhatsApp',fs:'Shërbimet që ju interesojnë',fm:'Përshkrimi i projektit',fx:'Dërgo kërkesën',
 e1:'Shkruani emrin tuaj.',e2:'Shkruani një numër të vlefshëm.',e3:'Përshkruani shkurtimisht projektin (të paktën 10 shkronja).',
@@ -251,8 +255,8 @@ en:{title:'Impuls Studios — Creative marketing agency in Kosovo',skip:'Skip to
 h:'Give Your Business a *Pulse.*',hp:'Creative strategy, content and digital solutions that help businesses stand out and grow.',see:'See our work',sc:'Scroll',
 at:'Creativity With Purpose.',ap:'Impuls Studios is a creative marketing agency that helps businesses present themselves better, communicate with their audiences and build a stronger digital presence. We combine creative ideas with practical solutions tailored to each business’s needs and goals.',
 st:'What Can We Do for Your Business?',sp:'Every business has different needs. We offer creative and digital services that help you present your brand better, reach your audience and create new opportunities.',
-wt:'Our Work. Ideas in Action.',wp:'Every project begins with an idea. Explore work that shows how we turn ideas into creative content and solutions.',
-we:'Our portfolio is being prepared. Message us to talk about your project.',view:'View project',close:'Close',prev:'Previous',next:'Next',
+wt:'Selected Projects. Real Work.',wp:'A selection of websites we have designed and developed for businesses in Kosovo. Each project is shaped around the client’s identity, services and needs.',
+we:'More projects are on the way. Get in touch to discuss your idea.',view:'View details',visit:'Visit website',open:'Open website',close:'Close',prev:'Previous',next:'Next',
 ct:'Have an Idea? Let’s Give It a Pulse.',cp:'Tell us what you want to achieve. We’ll discuss your business needs and explore how we can help.',or:'Or send an email inquiry',
 fn:'Name',fb:'Business name',fp:'Phone or WhatsApp number',fs:'Services you’re interested in',fm:'Project description',fx:'Send inquiry',
 e1:'Enter your name.',e2:'Enter a valid phone number.',e3:'Briefly describe your project (at least 10 characters).',
@@ -273,7 +277,7 @@ function rs(){const L=li();$('#S').innerHTML=SV.map((s,i)=>`<article class="svc 
 const t=SV.map(s=>`<span>${s[L]}</span>`).join('');$('#tk').innerHTML=t+t;
 const f=$('#f'),ck=new Set($$('[name=svc]:checked').map(x=>+x.value));$('#ck').innerHTML=SV.map((s,i)=>`<label class="ck"><input type="checkbox" name="svc" value="${i}"${ck.has(i)?' checked':''}><span>${s[L]}</span></label>`).join('')}
 function rw(){const l=lang,L=T[l];LIST=P.filter(p=>p.t&&p.t.sq&&((p.img&&p.img.length)||p.video||p.demo));
-$('#G').innerHTML=LIST.length?LIST.map((p,i)=>`<button class="pj rv" data-i="${i}" data-cur="${L.view}"><div class="im">${p.img&&p.img[0]?`<img src="${p.img[0]}" alt="${p.t[l]||p.t.sq}" loading="lazy" width="800" height="1000">`:'<div class="ph"></div>'}${p.demo?'<em class="dm">DEMO</em>':''}</div><b>${String(i+1).padStart(2,'0')}</b><h3>${p.t[l]||p.t.sq}</h3><small>${(p.c&&(p.c[l]||p.c.sq))||''}</small></button>`).join(''):`<div class="empty"><p>${L.we}</p><a class="btn" data-wa href="#"><span>${L.cta}</span><i></i></a></div>`}
+$('#G').innerHTML=LIST.length?LIST.map((p,i)=>`<button class="pj rv" data-i="${i}" data-cur="${L.view}"><div class="im">${p.img&&p.img[0]?`<img src="${p.img[0]}" alt="${p.t[l]||p.t.sq} — ${L.view}" loading="lazy" width="800" height="1000" onerror="this.style.display='none'">`:'<div class="ph"></div>'}${p.demo?'<em class="dm">DEMO</em>':''}</div><b>${String(i+1).padStart(2,'0')} · ${p.domain||'Impuls Studios'}</b><h3>${p.t[l]||p.t.sq}</h3><small>${(p.c&&(p.c[l]||p.c.sq))||''}</small><span class="pjhint">${L.view} ↗</span></button>`).join(''):`<div class="empty"><p>${L.we}</p><a class="btn" data-wa href="#"><span>${L.cta}</span><i></i></a></div>`}
 function ix(){$('#idx').textContent=`0${si+1} / 05 — ${T[lang]['n'+(si+1)]}`;$$('#nav nav a').forEach((a,j)=>a.classList.toggle('on',j==si))}
 function setLang(l){lang=l;const L=T[l];try{localStorage.ilang=l}catch(e){}
 document.documentElement.lang=l;hero(L.h);rs();rw();
@@ -288,9 +292,10 @@ $('#S').onclick=e=>{const b=e.target.closest('button');if(!b)return;const i=+b.d
 const D=$('#D');
 function show(i){cu=(i+LIST.length)%LIST.length;const p=LIST[cu],l=lang,L=T[l],im=p.img||[];
 const media=p.video?`<video controls preload="none" src="${p.video}"${im[0]?` poster="${im[0]}"`:''}></video>`:im[0]?`<img id="mi" src="${im[0]}" alt="${p.t[l]||p.t.sq}">`:'<div class="ph"></div>';
-$('#M').innerHTML=`<div class="mm">${media}${im.length>1?`<div class="ths">${im.map(s=>`<button class="th" data-s="${s}" aria-label="${L.view}"><img src="${s}" alt="" loading="lazy"></button>`).join('')}</div>`:''}</div><div class="mt"><small>${(p.c&&(p.c[l]||p.c.sq))||''}</small><h3>${p.t[l]||p.t.sq}</h3><p>${(p.d&&(p.d[l]||p.d.sq))||''}</p>${p.client?`<p><small>${p.client}</small></p>`:''}<div class="ctl"><button class="btn sm" id="pv"><span>${L.prev}</span></button><button class="btn sm" id="nx"><span>${L.next}</span><i></i></button></div></div>`;
+$('#M').innerHTML=`<div class="mm">${media}${im.length>1?`<div class="ths">${im.map(s=>`<button class="th" data-s="${s}" aria-label="${L.view}"><img src="${s}" alt="" loading="lazy"></button>`).join('')}</div>`:''}</div><div class="mt"><small>${(p.c&&(p.c[l]||p.c.sq))||''}</small><h3>${p.t[l]||p.t.sq}</h3>${p.domain?`<span class="domain">${p.domain}</span>`:''}<p>${(p.d&&(p.d[l]||p.d.sq))||''}</p><div class="ctl">${p.url?`<a class="btn sm" href="${p.url}" target="_blank" rel="noopener noreferrer"><span>${L.visit}</span><i></i></a>`:''}<button class="btn sm" id="pv"><span>${L.prev}</span></button><button class="btn sm" id="nx"><span>${L.next}</span><i></i></button></div></div>`;
 $('#pv').onclick=()=>show(cu-1);$('#nx').onclick=()=>show(cu+1);D.setAttribute('aria-label',p.t[l]||p.t.sq)}
 $('#G').onclick=e=>{const b=e.target.closest('.pj');if(b){show(+b.dataset.i);D.showModal()}};
+$('#G').onkeydown=e=>{const b=e.target.closest('.pj');if(b&&(e.key==='Enter'||e.key===' ')){e.preventDefault();show(+b.dataset.i);D.showModal()}};
 D.onclick=e=>{if(e.target===D)D.close();const t=e.target.closest('.th');if(t&&$('#mi'))$('#mi').src=t.dataset.s};
 $('#X').onclick=()=>D.close();
 D.onkeydown=e=>{if(e.key=='ArrowRight')show(cu+1);if(e.key=='ArrowLeft')show(cu-1)};
